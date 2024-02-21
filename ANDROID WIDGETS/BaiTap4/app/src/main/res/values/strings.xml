@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BaiTap4</string>
+    <string name="label_doC">Celsius</string>
+    <string name="label_doF">Fahrenheit</string>
+    <string name="btn_converttocelsius">Convert To Celsius</string>
+    <string name="btn_converttofahrenheit">Convert To Fahrenheit</string>
+    <string name="btn_clear">Clear</string>
+</resources>
