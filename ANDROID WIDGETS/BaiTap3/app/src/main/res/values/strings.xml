@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BaiTap3</string>
+    <string name="label_event_types">Các kiểu lập trình sự kiện</string>
+    <string name="label_soa">Số a:</string>
+    <string name="label_sob">Số b:</string>
+    <string name="btn_cong">Tổng 2 số</string>
+    <string name="btn_tru">Hiệu 2 số</string>
+    <string name="btn_nhan">Tích 2 số</string>
+    <string name="btn_chia">Thương 2 số</string>
+    <string name="label_result">Kết quả</string>
+    <string name="btn_uocsochunglonnhat">Ước số chung lớn nhất</string>
+    <string name="btn_exit">Thoát chương trình</string>
+</resources>

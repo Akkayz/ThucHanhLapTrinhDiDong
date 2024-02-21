@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#10CF12"
+        android:gravity="center"
+        android:text="@string/label_event_types"
+        android:textColor="@color/white" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textsoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_soa" />
+
+        <EditText
+            android:id="@+id/editsoa"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textsob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_sob" />
+
+        <EditText
+            android:id="@+id/editsob"
+            android:layout_width="381dp"
+            android:layout_height="48dp"
+            android:inputType="number" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textketqua"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1DF30C"
+        android:gravity="center"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btncong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_cong"
+        android:onClick="buttontinhtong2so"/>
+
+    <Button
+        android:id="@+id/btntru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_tru" />
+
+    <Button
+        android:id="@+id/btnnhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_nhan" />
+
+    <Button
+        android:id="@+id/btnchia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_chia" />
+
+    <Button
+        android:id="@+id/btnuocsochunglonnhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_uocsochunglonnhat" />
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_exit" />
+</TableLayout>
