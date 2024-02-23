@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0DA699"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="@string/txtLabel"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btnOpenClass"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="126dp"
+        android:alighParentLeft="true"
+        android:text="Quản lý lớp học"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btnOpenStudent"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_alignTop="@+id/btnOpenClass"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toRightOf="@+id/btnOpenClass"
+        android:text="Quản lý sinh viên"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnExitApp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/btnOpenClass"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:background="#C82E31"
+        android:text="Thoát" />
+</RelativeLayout>

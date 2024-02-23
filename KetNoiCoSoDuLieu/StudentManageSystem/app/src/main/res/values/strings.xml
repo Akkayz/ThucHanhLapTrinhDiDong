@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StudentManageSystem</string>
+    <string name="txtUsername">Tài khoản</string>
+    <string name="txtPassword">Mật khẩu</string>
+    <string name="btnLogin">Đăng nhập</string>
+    <string name="btnCloseLogin">Đóng</string>
+    <string name="txtLabel">Hệ thống quản lý sinh viên</string>
+    <string name="btnOpenClass">Đăng nhập</string>
+    <string name="btnOpenStudent">Đóng</string>
+    <string name="btnExitApp">Thoát</string>
+
+</resources>
