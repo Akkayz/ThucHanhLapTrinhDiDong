@@ -1,124 +1,95 @@
-- Layout:
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:background="#10CF12"
+        android:gravity="center"
+        android:text="@string/label_event_types"
+        android:textColor="@color/white" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textdoF"
-            android:layout_width="match_parent"
+            android:id="@+id/textsoa"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/label_doF" />
+            android:text="@string/label_soa" />
 
         <EditText
-            android:id="@+id/edit_doF"
-            android:layout_width="match_parent"
+            android:id="@+id/editsoa"
+            android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:text="" />
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textdoC"
-            android:layout_width="match_parent"
+            android:id="@+id/textsob"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/label_doC" />
+            android:text="@string/label_sob" />
 
         <EditText
-            android:id="@+id/edit_doC"
-            android:layout_width="match_parent"
+            android:id="@+id/editsob"
+            android:layout_width="381dp"
             android:layout_height="48dp"
-            android:text="" />
+            android:inputType="number" />
+    </TableRow>
 
+    <TextView
+        android:id="@+id/textketqua"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1DF30C"
+        android:gravity="center"
+        android:text="" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+    <Button
+        android:id="@+id/btncong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_cong"
+        android:onClick="buttontinhtong2so"/>
 
-            <Button
-                android:id="@+id/btn_converttocelsius"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/btn_converttocelsius" />
+    <Button
+        android:id="@+id/btntru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_tru" />
 
-            <Button
-                android:id="@+id/btn_converttofahrenheit"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/btn_converttofahrenheit" />
+    <Button
+        android:id="@+id/btnnhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_nhan" />
 
-        </LinearLayout>
+    <Button
+        android:id="@+id/btnchia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_chia" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btn_clear"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_clear" />
-        </LinearLayout>
-
-    </LinearLayout>
-</LinearLayout>
-- MainActivity.java: 
-package com.example.baitap4;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-public class MainActivity extends AppCompatActivity {
-    private Button btn_converttocelsius, btn_converttofahrenheit, btn_clear;
-    private EditText edt_doC, edt_doF;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        btn_converttocelsius = findViewById(R.id.btn_converttocelsius);
-        btn_converttofahrenheit = findViewById(R.id.btn_converttofahrenheit);
-        btn_clear = findViewById(R.id.btn_clear);
-        edt_doC = findViewById(R.id.edit_doC);
-        edt_doF = findViewById(R.id.edit_doF);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        btn_converttocelsius.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                double doF = Double.parseDouble(edt_doF.getText().toString());
-                double doC = (doF - 32) * 5 / 9;
-                edt_doC.setText(doC + "");
-            }
-        });
-        btn_converttofahrenheit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                double doC = Double.parseDouble(edt_doC.getText().toString());
-                double doF = doC * 9 / 5 + 32;
-                edt_doF.setText(doF + "");
-            }
-        });
-        btn_clear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                edt_doC.setText("");
-                edt_doF.setText("");
-            }
-        });
-    }
-}
+    <Button
+        android:id="@+id/btnuocsochunglonnhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_uocsochunglonnhat" />
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_exit" />
+</TableLayout>
