@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BaiTap8</string>
+    <string name="Label_NamDuongLich">Năm dương lịch:</string>
+    <string name="Label_NamAmLich">Năm âm lịch:</string>
+    <string name="btn_ChuyenDoi">Chuyển đổi</string>
+    <string name="Textview">Chuyển đổi năm dương lịch</string>
+</resources>
