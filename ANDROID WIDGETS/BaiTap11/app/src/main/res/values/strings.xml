@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tên ứng dụng của bạn</string>
+    <string-array name="list_ten">
+        <item>Teò</item>
+        <item>Tí</item>
+        <item>Bin</item>
+        <item>Bo</item>
+    </string-array>
+</resources>
