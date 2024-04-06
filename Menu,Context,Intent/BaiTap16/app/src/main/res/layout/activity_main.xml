@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView "Quản lý công việc hàng tuần" -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý công việc hàng tuần"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Công việc -->
+    <TextView
+        android:id="@+id/tvCongViec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Công việc:"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtCongViec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvCongViec"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Nội dung -->
+    <TextView
+        android:id="@+id/tvNoiDung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nội dung:"
+        android:layout_below="@id/edtCongViec"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtNoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvNoiDung"
+        android:layout_below="@id/edtCongViec"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Dòng 4 -->
+    <TableLayout
+        android:id="@+id/tableNgayHT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNoiDung"
+        android:layout_marginTop="16dp">
+
+        <TableRow>
+            <!-- TextView "NgàyHT" -->
+            <TextView
+                android:id="@+id/tvNgayHT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NgàyHT:"/>
+            <!-- TextView "NgàyHTDisplay" -->
+            <TextView
+                android:id="@+id/tvNgayHTDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <!-- Button "Date" -->
+            <Button
+                android:id="@+id/btnDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Dòng 5 -->
+    <TableLayout
+        android:id="@+id/tableGioHT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableNgayHT"
+        android:layout_marginTop="16dp">
+
+        <TableRow>
+            <!-- TextView "GiờHT" -->
+            <TextView
+                android:id="@+id/tvGioHT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GiờHT:"/>
+            <!-- TextView "GiờHTDisplay" -->
+            <TextView
+                android:id="@+id/tvGioHTDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <!-- Button "Time" -->
+            <Button
+                android:id="@+id/btnTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Button "ThêmCV" -->
+    <Button
+        android:id="@+id/btnThemCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ThêmCV"
+        android:layout_below="@id/tableGioHT"
+        android:layout_marginTop="16dp"/>
+
+    <!-- TextView "Danh sách công việc" -->
+    <TextView
+        android:id="@+id/tvDanhSachCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách công việc"
+        android:layout_below="@id/btnThemCV"
+        android:layout_marginTop="16dp"/>
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/lvDanhSachCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDanhSachCV"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

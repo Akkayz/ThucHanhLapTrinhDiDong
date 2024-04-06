@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BaiTap15</string>
+    <string name="category_phone">Điện thoại</string>
+    <string name="category_computer">Máy tính</string>
+    <string name="category_watch">Đồng hồ</string>
+    <string-array name="categories_array">
+        <item>Điện thoại</item>
+        <item>Máy tính</item>
+        <item>Đồng hồ</item>
+    </string-array>
+</resources>
